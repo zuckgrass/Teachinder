@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Teachinder</title>
+<link rel="stylesheet" href="./css/styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+</head>
+<body>
+	<div class="main">
+	<section class="top-part">
+			<div class="first-part">
+			<image src="./img/logo.jpg" alt="logo">
+			<div class="search">
+				<input placeholder="Name, note or age to search" type="text" id="search-input" class="modal-field-input">
+				<button type="search" form="form" value="Search" class="search-button">Search</button>
+			</div>
+			</div>
+			<div class="second-part">
+				<div class="catagories">
+					<button class="catalogue1">Teachers</button>
+					<button class="catalogue2">Statistics</button>
+					<button class="catalogue3">Favorites</button>
+					<button class="catalogue4">About</button>
+				</div>
+				<button type="add" form="form" value="Add" class="add-teacher-button">Add teacher</button>
+			</div>
+			<hr style="width:50%">
+	</section>
+	<section class="top-teachers">
+			<h2 class="section-title">Top Teachers</h2>
+			<div class="filters">
+				<div class="age-filter">
+					<label class="filter-name">Age</label>
+					<select id="age" class="div-control-filter">
+					<option value="18-25">18-25</option>
+		            <option value="26-30">26-30</option>
+		            <option value="31-36">31-36</option>
+		            <option value="36-50">36-50</option>
+		            <option value=">50">>50</option>
+		        	</select>
+				</div>
+				<div class = 'vr'></div>
+				<div class="region-filter">
+					<label class="filter-name">Region</label>
+					<select id="region" class="div-control-filter">
+					<option value="Europe">Europe</option>
+		            <option value="America">America</option>
+		            <option value="Africa">Africa</option>
+		            <option value="Asia">Asia</option>
+		            <option value="Australia">Australia</option>
+		      </select>
+				</div>
+				<div class = 'vr'></div>
+				<div class="sex-filter">
+					<label class="filter-name">Sex</label>
+					<select id="sex" class="div-control-filter">
+					<option value="Female">Female</option>
+		            <option value="Male">Male</option>
+		            <option value="Unknown">Unknown</option>
+		        	</select>
+				</div>
+				<div class = 'vr'></div>
+				<input type="checkbox" id="photo-filter" name="photo-filter">
+      			<label id="photo-filter" for="photo-filter">Only with photo</label>
+      			<div class = 'vr'></div>
+      			<input type="checkbox" id="favorite-filter" name="favorite-filter">
+      			<label id="favorite-filter" for="favorite-filter">Only favorites</label>
+			</div>
+			<div class="container-grid">
+			  <div class="item-user">
+			  	<img src="https://cdn-images.vetstreet.com/6f/807bc0244911e28836005056ad4734/file/A-cat-that-could-be-5-6-years-old-Thinkstock-147307097-335lc110212.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Sophia</b>
+			  	<b class="family-name">Pisotska</b>
+			  	<label class="specialty-user">Mathematics</label>
+			  	<label class="country-user">Ukraine</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_2560%2Cc_limit/1521-WIRED-Cat.jpeg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Ihor</b>
+			  	<b class="family-name">Tkachuk</b>
+			  	<label class="specialty-user">Chemistry</label>
+			  	<label class="country-user">Ukraine</label>
+			  </div>
+			  <div class="item-user">
+			  		<div class="user-image">
+			  	<img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_2x3.jpg" class="img-avatar" alt="Avatar">
+			  		<image class="star-image" src="./img/star-light.png" alt="star">
+			  	</div>
+			  	<b class="name">John</b>
+			  	<b class="family-name">Smith</b>
+			  	<label class="specialty-user">Biology</label>
+			  	<label class="country-user">United Kingdom</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-34182,msid-93429238/international-cat-day-2022-all-you-need-to-know-about-date-significance-history.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Arthur</b>
+			  	<b class="family-name">Doyle</b>
+			  	<label class="specialty-user">Physics</label>
+			  	<label class="country-user">USA</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782__340.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Ari</b>
+			  	<b class="family-name">Tang</b>
+			  	<label class="specialty-user">Mathematics</label>
+			  	<label class="country-user">China</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cq=70%2Csharpen=1%2Cwidth=956/wp-content/uploads/international-black-cat-awareness-month-e1575287719521.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Maria</b>
+			  	<b class="family-name">Shelby</b>
+			  	<label class="specialty-user">English</label>
+			  	<label class="country-user">Germany</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="http://images2.minutemediacdn.com/image/upload/c_crop,h_1193,w_2121,x_0,y_64/f_auto,q_auto,w_1100/v1565279671/shape/mentalfloss/578211-gettyimages-542930526.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Rachel</b>
+			  	<b class="family-name">Pitt</b>
+			  	<label class="specialty-user">Drama</label>
+			  	<label class="country-user">USA</label>
+			  </div>
+			</div>
+			<hr style="width:50%">
+		</section>
+	<section class="statistics">
+			<h2 class="section-title">Statistics</h2>
+			<div name="table">
+		    <table name="statistics">
+		      <tr>
+		      	<th>Name</th>
+		        <th>Speciality</th>
+		        <th>Age</th>
+		        <th>Gender</th>
+		        <th>Country</th>
+		      </tr>
+		      <tr>
+		      	<td>Sophia</td>
+		        <td>Mathematics</td>
+		        <td>19</td>
+		        <td>Female</td>
+		        <td>Ukraine</td>
+		      </tr>
+		      <tr>
+		      	<td>Ihor</td>
+		        <td>Chemistry</td>
+		        <td>23</td>
+		        <td>Male</td>
+		        <td>Ukraine</td>
+		      </tr>
+		       <tr>
+		      	<td>John</td>
+		        <td>Biology</td>
+		        <td>25</td>
+		        <td>Male</td>
+		        <td>United Kingdom</td>
+		      </tr>
+		       <tr>
+		      	<td>Arthur</td>
+		        <td>Physics</td>
+		        <td>27</td>
+		        <td>Male</td>
+		        <td>USA</td>
+		      </tr>
+		       <tr>
+		      	<td>Ari</td>
+		        <td>Mathematics</td>
+		        <td>23</td>
+		        <td>Female</td>
+		        <td>China</td>
+		      </tr>
+		       <tr>
+		      	<td>Maria</td>
+		        <td>English</td>
+		        <td>26</td>
+		        <td>Female</td>
+		        <td>Germany</td>
+		      </tr>
+		       <tr>
+		      	<td>Rachel</td>
+		        <td>Drama</td>
+		        <td>24</td>
+		        <td>Female</td>
+		        <td>USA</td>
+		      </tr>
+		    </table>
+		    <div class="number-pages">
+		    	<button class="first-page-number">1</button>
+		    	<button class="second-page-number">2</button>
+		    	<button class="third-page-number">3</button>
+		    	<button class="three-dots">...</button>
+		    	<button class="last-page-number">Last</button>
+		    </div>
+		    <hr style="width:50%">
+		  </div>
+	</section>
+	<section class="favorites">
+		<h2 class="section-title">Favorites</h2>
+		<div class="carousel-list">
+			<button class="to-left"><img src="./img/left.jpg" alt="left"></button>
+			  <div class="item-user">
+			  	<img src="https://cdn-images.vetstreet.com/6f/807bc0244911e28836005056ad4734/file/A-cat-that-could-be-5-6-years-old-Thinkstock-147307097-335lc110212.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Sophia</b>
+			  	<b class="family-name">Pisotska</b>
+			  	<label class="country-user">Ukraine</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://media.wired.co.uk/photos/60c8730fa81eb7f50b44037e/16:9/w_2560%2Cc_limit/1521-WIRED-Cat.jpeg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Ihor</b>
+			  	<b class="family-name">Tkachuk</b>
+			  	<label class="country-user">Ukraine</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_2x3.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">John</b>
+			  	<b class="family-name">Smith</b>
+			  	<label class="country-user">United Kingdom</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://m.economictimes.com/thumb/height-450,width-600,imgsize-34182,msid-93429238/international-cat-day-2022-all-you-need-to-know-about-date-significance-history.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Arthur</b>
+			  	<b class="family-name">Doyle</b>
+			  	<label class="country-user">USA</label>
+			  </div>
+			  <div class="item-user">
+			  	<img src="https://www.daysoftheyear.com/cdn-cgi/image/dpr=1%2Cf=auto%2Cfit=cover%2Cheight=650%2Cq=70%2Csharpen=1%2Cwidth=956/wp-content/uploads/international-black-cat-awareness-month-e1575287719521.jpg" class="img-avatar" alt="Avatar">
+			  	<b class="name">Maria</b>
+			  	<b class="family-name">Shelby</b>
+			  	<label class="country-user">Germany</label>
+			  </div>
+			<button class="to-right"><img src="./img/right.jpg" alt="right"></button>
+		</div>
+		<hr style="width:50%">
+	</section>
+	<section class="footer">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim a</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
+		<div class="second-part">
+				<div class="catagories">
+					<button class="catalogue1">Teachers</button>
+					<button class="catalogue2">Statistics</button>
+					<button class="catalogue3">Favorites</button>
+					<button class="catalogue4">About</button>
+				</div>
+				<button type="add" form="form" value="Add" class="add-teacher-button">Add teacher</button>
+			</div>
+	</section>  
+	</div>
+	<div class="modal-bgd" id="form-modal">
+		<form class="register" action="#" method="get" autocomplete="on">
+			<div class="wrapper"> 
+			<h2 class="heading">
+			Add Teacher
+			<button class="close-button">
+                <img src="./img/cross.png" alt="close">
+            </button>
+			</h2>
+			<div class="modal-form-container"> 
+			<div class="input">
+				<label for="full_name" class="modal-field-name">Full Name</label>
+				<input placeholder="Enter your full name" type="text" id="full_name" name="full_name" class="modal-field-input"required>
+			</div>
+			<div class="modal-win-list">
+				<label for="speciality" class="modal-field-name">Speciality</label>
+				<select id="speciality" class="div-control">
+					<option value="math">Mathematics</option>
+		            <option value="phys">Physics</option>
+		            <option value="eng">English language</option>
+		            <option value="chem">Chemistry</option>
+		            <option value="biol">Biology</option>
+		        </select>
+			</div>
+			<div class="radio-buttons">
+				<label for="gender" class="modal-field-name">Gender</label>
+				<input type="radio"  value="male"><label id="gender" for="male">Male</label>
+				<input type="radio" value="female"><label id="gender" for="female">Female</label>
+				<input type="radio" value="unknown"><label id="gender" for="unknown">Unknown</label>
+			</div>
+			<div class="birthdate">
+				<label for="birthday" class="modal-field-name">Birthday date</label>
+				<input type="date" id="birthday" name="bday" class="modal-field-input">
+			</div>
+			<div class="info-in-row">
+			<div class="email">
+				<label for="email" class="modal-field-name">Email</label>
+				<input  type="email" id="email" name="email" pattern=".+@gmail\.com" class="modal-field-input" required>
+			</div>
+			<div class="phone">
+				<label for="phone" class="modal-field-name">Telephone number</label>
+					<input type="tel" id="phone" name="phone" pattern="+[0-9]{2}([0-9]{3})[0-9]{7}" class="modal-field-input" required>
+			</div>
+			</div>
+			<div class="info-in-row">
+			<div class="modal-win-list">
+				<label for="country" class="modal-field-name">Country</label>
+				<select id="country" name="country" class="div-control">
+					<option value="Ukraine">Україна</option>
+		            <option value="USA">USA</option>
+		            <option value="Poland">Polska</option>
+		            <option value="Germany">Deutschland</option>
+		            <option value="UK">United Kingdom</option>
+		            <option value="Canada">Canada</option>
+		        </select>
+		    </div>
+		    <div class="input" id="city">
+				<label for="city" class="modal-field-name">City</label>
+				<input type="text" id="city" name="city" class="modal-field-input" required>
+			</div>
+			</div>
+			<div class="color">
+				<label for="color" class="modal-field-name">Background color</label>
+				<input type="color">
+			</div>
+			<div class="input-comment">
+				<label for="comments" class="modal-field-name">Notes (optional)</label>
+				<textarea placeholder="Leave you feedback" rows="4" cols="40" for="comment"></textarea>
+			</div>
+			<button type="submit" form="form" value="Submit" class="submit-application-button">Submit data</button>
+		</div>
+		</div>
+		</form>
+	</div>
+	<div class="full-card">
+		<div class="wrapper" id="wrapper-card">
+		<h2  class="heading" id="teacher-info">
+		Teacher Info
+		<button class="close-button"><img src="./img/cross.png" alt="close">
+        </button></h2>
+        <div class="info-in-row">
+        <img class="avatar" src="https://cdn-images.vetstreet.com/6f/807bc0244911e28836005056ad4734/file/A-cat-that-could-be-5-6-years-old-Thinkstock-147307097-335lc110212.jpg" alt="Teacher image" usemap="#workmap">
+        <div class="person-container">
+		<div class="fullname">
+			<label for="full_name">Sophia Pisotska</label>
+		</div>
+		<div class="speciality">Mathematics</div>
+		<div class="info-in-row" id="age-gender">
+		<div class="age">
+			<date for="age">19</date>
+		</div>
+		<div class="connector"><label for="connector">,&nbsp</label></div>
+		<div class="gender">
+			<label for="gender">Female</label>
+		</div>
+		</div>
+		<div class="info-in-row" id="location">
+		<div class="city">
+			<label for="city">Kyiv</label>
+		</div>
+		<div class="connector"><label for="connector">,&nbsp</label></div>
+		<div class="country">
+			<label for="country">Ukraine</label>
+	    </div>
+    	</div>
+	    <div class="email">
+			<a href = "mailto:abc@example.com?subject = Feedback&body = Message" for="email">sofia.pisotska@gmail.com</a>
+		</div>
+		<div class="phone">
+			<a href="tel:+6494461709" for="phone">+3809913644489</a>
+		</div>
+		</div>
+		<button class="star-button"><img class="star" src="./img/star.png" alt="star">
+        </button>
+		</div>
+		<div class="comment">
+			<text for="comment">Impressive, very nice. Let's see Paul Allen's card.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</text>
+		</div>
+		<div class="map">
+			<a href="https://www.google.com.ua/maps/place/%D0%9A%D0%B8%D0%B5%D0%B2,+02000/@50.4021367,30.2524988,10z/data=!3m1!4b1!4m6!3m5!1s0x40d4cf4ee15a4505:0x764931d2170146fe!8m2!3d50.4501!4d30.5234!16zL20vMDJzbjM0?hl=ua">toggle map</a>
+		</div>
+		</div>
+	</div>
+	<script src="./scripts/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,402 @@
+body{
+    height:100%;
+    font-family: 'Montserrat', sans-serif;
+}
+.register{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    /*comment area*/
+    opacity: 0;
+    pointer-events: none;
+     /*comment area*/
+    transition:all 0.3s ease-in-out; 
+    z-index: 100;
+}
+.wrapper{
+     position:relative;
+     background-color: white;
+}
+.heading{
+    font-family: 'Calibri';
+    width: 91%;
+    font-weight:500;
+    background-color: #454547;
+    padding: 10px 20px;
+    color: white;
+    display:flex;
+    margin:0px;
+    justify-content: space-between;
+}
+.modal-form-container{
+    background-color: white;
+    padding:0px 50px 10px 50px;
+    position:relative;
+}
+.modal-field-name{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat';
+    color: #454547;
+}
+.modal-field-input, .div-control{
+    width: 310px;
+    height: 24px;
+    left: 494px;
+    top: 368px;
+    background: #FFFFFF;
+    border: 1px solid #454547;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding:4px 8px;
+}
+.submit-application-button, .search-button, .add-teacher-button{
+    align-items: center;
+    width: 98%;
+    background: #FFFFFF;
+    border: 1px solid #FF6B0A;
+    border-radius: 8px;
+    color:#FF6B0A;
+    font-weight:bolder;
+    padding:4px 0px;
+    cursor:pointer;
+}
+.submit-application-button:hover, .search-button:hover, .add-teacher-button:hover {
+  background-color: #FF6B0A;
+  color:white;
+}
+
+.close-button{
+    position: absolute;
+    right:0;
+    top:0;
+    font-size: 14px;
+    color:#454547;
+    margin: 15px 20px;
+    cursor:pointer;
+    border: 0px #454547;
+    background-color: #454547;
+}
+.div-control{
+    width: 328px;
+    height:35px;
+    padding:5px 5px;
+}
+.info-in-row{
+    display:flex;
+}
+#phone, #email, #city{
+    width: 136px;
+}
+#email{
+    margin-right:20px;
+}
+#country{
+    width: 154px;
+    margin-right: 20px;
+    padding-left:5px;
+}
+.input-comment{
+    margin-bottom:15px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+#gender{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+.full-card{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background: rgba(0, 0, 0, 0.7);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    /*comment area*/
+    opacity: 0;
+    pointer-events: none;
+     /*comment area*/
+    transition:all 0.3s ease-in-out; 
+    z-index: 99;
+}
+#teacher-info{
+    width: 92%;
+}
+#wrapper-card{
+    width:500px;
+    height:100%;
+}
+.avatar{
+    width:40%;
+    height:55%;
+}
+.person-container, .avatar{
+    padding-left: 15px;
+    padding-top: 15px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+.fullname{
+    font-family: 'Calibri';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.speciality{
+    font-family: 'Calibri';
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#age-gender, #location,.email, .phone{
+    margin-bottom: 5px;
+}
+.email, .map{
+   color: #089FBE;
+}
+.comment{
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.map{
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+.star-button{
+    cursor:pointer;
+    border: 0px #FFFF;
+    background-color: #FFFF;
+    padding-left:40px;
+}
+.star{
+    background-color: #FFFF;
+    width:30px;
+    height:24px;
+}
+body{
+    background-color: #FFF;
+    width: 768px;
+    margin: 0 auto;
+    border: 1px solid #DFDFDF;
+}
+.main{
+    padding:40px 40px;
+    box-shadow: 10px 5px 5px #DFDFDF;
+}
+.first-part, .second-part{
+     display:flex;
+     justify-content: space-between;
+     margin-bottom:20px;
+}
+.search{
+    padding-top: 15px;
+}
+#search-input{
+    width: 175px;
+}
+.search-button{
+    width:75px;
+    padding: 8px 0px;
+    margin-left: 10px;
+}
+.catagories{
+    display:flex;
+    width:400px;
+    justify-content: space-between;
+    margin-top:10px;
+}
+.catalogue1, .catalogue2, .catalogue3, .catalogue4{
+    cursor:pointer;
+    border: 0px #FFF;
+    background-color: #FFF;
+    color:#FF6B0A;
+    font-size:18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+}
+.catalogue1:hover, .catalogue2:hover, .catalogue3:hover, .catalogue4:hover{
+    color: #CB443E;
+}
+.add-teacher-button{
+    width:100px;
+    padding: 8px 0px;
+}
+.section-second-title{
+    text-align: center;
+}
+.filters{
+    display:flex;
+    justify-content: space-between;
+}
+.filter-name,#photo-filter, #favorite-filter{
+    font-size: 12px;
+    font-family: 'Montserrat';
+    color: #454547;
+}
+.filter-name{
+    margin-top:10px;
+}
+.div-control-filter{
+    width:90px;
+    height: 24px;
+    background: #FFFFFF;
+    border: 1px solid #454547;
+    border-radius: 8px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding:4px 8px;
+    margin-right:5px;
+    margin-top:10px;
+}
+#photo-filter, #favorite-filter{
+padding-top:15px;
+}
+.vr{
+    display: inline;
+    height: 20px;
+    margin: 10px;
+    border-left: 1px dotted black;
+    padding-top:5px;
+    margin-bottom:5px;
+}
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3%;
+  font-size: 1.4em;
+  justify-items: center; 
+  margin-top:40px;
+}
+.img-avatar {
+  border-radius: 50%;
+  width:80px;
+  height:80px;
+  margin-bottom:10px;
+  border: 3px solid #F39685;
+  align-content: center;
+  transition: 0.5s all ease-in-out;
+}
+.img-avatar:hover{
+    border: 3px solid #CA482E;
+    transform: scale(1.2);
+}
+.item-user{
+    margin: 0px 10px 15px 10px;
+    display:flex;
+    background: white;
+    border: none;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+}
+b .name, .specialty-user, .country-user, .family-name{
+    margin-bottom:10px;
+}
+.specialty-user{
+    font-size: 10px;
+    color: #9390A3;
+}
+.country-user{
+    font-size: 9px;
+    align-items: center;
+}
+
+.user-image{
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.img-avatar{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.star-image{
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width:30px;
+    height:30px;
+    border-radius: 60%;
+}
+.section-title{
+    margin-bottom:40px;
+    text-align: center;
+}
+table {
+  border-collapse: collapse;
+  width:100%;
+  margin-bottom:20px;
+}
+th{
+    font-weight: lighter;
+    padding-bottom: 10px;
+    border-bottom: 1pt solid #222222;
+}
+th:hover{
+     border-bottom: 3pt solid #222222;
+}
+td {
+  text-align: center;
+  font-size: 13px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+tr:nth-child(even){background-color:#F7F5F8;}
+tr:hover {background-color: #F9E3FB;}
+.number-pages{
+    display:flex;
+    color: #0C96BA;
+}
+.first-page-number, .second-page-number,.three-dots,.third-page-number, .last-page-number{
+    margin:5px;
+    cursor:pointer;
+    border: 0px #FFF;
+    background-color: #FFF;
+    color: #0C96BA;
+}
+.first-page-number:hover, .second-page-number:hover,.three-dots:hover,.third-page-number:hover, .last-page-number:hover{
+    color:#0F5D5F;
+}
+.first-page-number, .three-dots{
+    color:black;
+}
+.to-left, .to-right{
+    cursor:pointer;
+    border: 0px #FFF;
+    background-color: #FFF;
+    color: #0C96BA;
+}
+.carousel-list{
+    display:flex;
+    justify-content: space-between;
+}
+.footer{
+    margin-top:40px;
+}
