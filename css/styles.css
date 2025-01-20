@@ -284,13 +284,17 @@ padding-top:15px;
     padding-top:5px;
     margin-bottom:5px;
 }
+
 .container-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 3%;
   font-size: 1.4em;
   justify-items: center; 
+  text-align: center;
   margin-top:40px;
+  margin-bottom:40px;
+  padding-bottom: 40px;
 }
 .img-avatar {
   border-radius: 50%;
@@ -326,25 +330,22 @@ b .name, .specialty-user, .country-user, .family-name{
     align-items: center;
 }
 
-.user-image{
+.user-image {
     position: relative;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-}
+    display: inline-block;
+  }
 .img-avatar{
     position: relative;
     top: 0;
     left: 0;
 }
-.star-image{
+.star-image {
     position: absolute;
-    top: 0px;
-    right:0px;
-    width:30px;
-    height:30px;
-    border-radius: 60%;
-}
+    top: 5px;
+    right: 5px;
+    width: 25px; /* Adjust size as needed */
+    height: 25px;
+  }
 .section-title{
     margin-bottom:40px;
     text-align: center;
